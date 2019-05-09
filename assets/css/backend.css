@@ -1,0 +1,41 @@
+/*backend css*/
+*{
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+}
+header,footer,section,article,figure,figcaption,aside,nav{
+	display: block;
+}
+a{
+	text-decoration: none;
+}
+p{
+
+}
+h1{
+
+}
+h2{
+	
+}
+h3{
+	
+}
+h4{
+	
+}
+h5{
+	
+}
+h6{
+	
+}
+span{
+
+}
+img{
+	max-width: 100%;
+}

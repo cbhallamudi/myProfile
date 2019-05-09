@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Run Wild - Demo';
+    src: url('RunWild.eot');
+    src: url('RunWild.eot?#iefix') format('embedded-opentype'),
+        url('RunWild.woff2') format('woff2'),
+        url('RunWild.woff') format('woff'),
+        url('RunWild.ttf') format('truetype'),
+        url('RunWild.svg#RunWild') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
