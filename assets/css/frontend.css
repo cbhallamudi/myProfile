@@ -9,7 +9,7 @@
 header,footer,section,article,figure,figcaption,aside,nav{
 	display: block;
 }
-a{
+/*a{
 
 }
 p{
@@ -35,7 +35,7 @@ h6{
 }
 span{
 
-}
+}*/
 img{
 	max-width: 100%;
 }
@@ -71,7 +71,7 @@ img{
     position: absolute;
     width: 100%;
     height: 100px;
-    top: 250px !important;
+    top: 218px !important;
     right: 100%;
     background-color: #06094d4d;
     animation-name: welcomeHeadingDiv;
@@ -86,7 +86,7 @@ img{
 
 }
 
-#welcomePageMainHeading{
+.welcomePageMainHeadingleft{
     font-family: 'Run Wild - Demo';
     color: transparent;
     font-weight: 900;
@@ -96,35 +96,127 @@ img{
     background: linear-gradient(to right bottom,#e14c7f 39%,#f2e314 43%,#6df244 59%);
     -webkit-background: -webkit-linear-gradient(to right bottom,#e14c7f 39%,#f2e314 43%,#6df244 59%);
     position: absolute;
-    display: block;
-    top: 250px;
+    display: inline-block;
+    top: 218px !important;
     left: 100%;
-    height: 50px;
-    width: 50px;
-    border: 1px solid red;
-    border-radius: 50% !important;
+    height: 100px;
+    /*width: 50%;*/
+    /*height: 50px;
+    width: 50px;*/
+    /*border: 1px solid red;*/
+    /*border-radius: 50% !important;*/
     background-clip: text;
     -webkit-background-clip: text;
-    animation-name: welcomeHeading;
+    animation-name: welcomeHeadingLeft;
     animation-fill-mode: forwards;
     animation-delay: 3s;
-    animation-duration: 6s;
+    animation-duration: 5s;
     animation-timing-function: ease-in-out;
 
 }
 
-@keyframes welcomeHeading{
-    0%{left: 100%;border-radius: 50%;height: 50px;width: 50px;}
-    10%{top:100px;left: 90%;border-radius: 50%;height: 50px;width: 50px;}
+@keyframes welcomeHeadingLeft{
+    0%{left: 100%;/*border-radius: 50%;height: 50px;width: 50px;*/}
+    /*10%{top:130px;left: 90%;border-radius: 50%;height: 50px;width: 50px;}
     20%{top:250px;left: 80%;border-radius: 50%;height: 50px;width: 50px;}
-    30%{top:100px;left: 70%;border-radius: 50%;height: 50px;width: 50px;}
+    30%{top:150px;left: 70%;border-radius: 50%;height: 50px;width: 50px;}
     40%{top:250px;left: 60%;border-radius: 50%;height: 50px;width: 50px;}
-    50%{top:100px;left: 50%;border-radius: 50%;height: 50px;width: 50px;}
+    50%{top:180px;left: 50%;border-radius: 50%;height: 50px;width: 50px;}
     60%{top:250px;left: 40%;border-radius: 50%;height: 50px;width: 50px;}
-    70%{top:100px;left: 30%;border-radius: 50%;height: 50px;width: 50px;}
+    70%{top:220px;left: 30%;border-radius: 50%;height: 50px;width: 50px;}
     80%{top:250px;left: 20%;border-radius: 50%;height: 50px;width: 50px;}
-    90%{left: 10%;border-radius: 25%;height: 100px;width: 50%;}
-    100%{left: 0%;border-radius: 0px;height: 100px;width: 100%; border:none;}
+    90%{left: 10%;border-radius: 25%;height: 100px;width: 50%;}*/
+    100%{left: 39.5%;}
+}
+.welcomePageMainHeadingRight{
+    font-family: 'Merriweather', serif;
+    color: transparent;
+    font-weight: 900;
+    text-align: left;
+    padding: 20px 10px;
+    font-size: 3vw !important;
+    background: linear-gradient(to right bottom,#e14c7f 39%,#f2e314 43%,#6df244 59%);
+    -webkit-background: -webkit-linear-gradient(to right bottom,#e14c7f 39%,#f2e314 43%,#6df244 59%);
+    position: absolute;
+    display: block;
+    top: 190px !important;
+    left: 100%;
+    min-height: 100px;
+    width: 35px;
+    word-wrap: break-word;
+
+    /*width: 50%;*/
+    /*height: 50px;
+    width: 50px;*/
+    /*border: 1px solid red;*/
+    /*border-radius: 50% !important;*/
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation-name: welcomeHeadingRight;
+    animation-fill-mode: forwards;
+    animation-delay: 8s;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    font-size: 24px !important;
+
+}
+
+@keyframes welcomeHeadingRight{
+    0%{left: 100%;/*border-radius: 50%;height: 50px;width: 50px;*/}
+    /*10%{top:130px;left: 90%;border-radius: 50%;height: 50px;width: 50px;}
+    20%{top:250px;left: 80%;border-radius: 50%;height: 50px;width: 50px;}
+    30%{top:150px;left: 70%;border-radius: 50%;height: 50px;width: 50px;}
+    40%{top:250px;left: 60%;border-radius: 50%;height: 50px;width: 50px;}
+    50%{top:180px;left: 50%;border-radius: 50%;height: 50px;width: 50px;}
+    60%{top:250px;left: 40%;border-radius: 50%;height: 50px;width: 50px;}
+    70%{top:220px;left: 30%;border-radius: 50%;height: 50px;width: 50px;}
+    80%{top:250px;left: 20%;border-radius: 50%;height: 50px;width: 50px;}
+    90%{left: 10%;border-radius: 25%;height: 100px;width: 50%;}*/
+    100%{left: 65%;}
+}
+.welcomePageMainHeadingBottom{
+    font-family: 'Merriweather', serif;
+    color: transparent;
+    font-weight: 900;
+    text-align: left;
+    padding: 20px 10px;
+    font-size: 3vw !important;
+    background: linear-gradient(to right bottom,#e14c7f 39%,#f2e314 43%,#6df244 59%);
+        background-clip: text;
+    -webkit-background: -webkit-linear-gradient(to right bottom,#e14c7f 39%,#f2e314 43%,#6df244 59%);
+    position: absolute;
+    display: block;
+    top: 490px !important;
+    left: 100%;
+    min-height: 100px;
+    /*width: 100%;*/
+    word-wrap: break-word;
+    /*height: 50px;*/
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation-name: welcomeHeadingBottom;
+    animation-fill-mode: forwards;
+    animation-delay: 13s;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    font-size: 24px !important;
+    border-bottom:1px solid red;
+    border-radius: 100%;
+
+}
+
+@keyframes welcomeHeadingBottom{
+    0%{left: 100%;/*border-radius: 50%;height: 50px;width: 50px;*/}
+    /*10%{top:130px;left: 90%;border-radius: 50%;height: 50px;width: 50px;}
+    20%{top:250px;left: 80%;border-radius: 50%;height: 50px;width: 50px;}
+    30%{top:150px;left: 70%;border-radius: 50%;height: 50px;width: 50px;}
+    40%{top:250px;left: 60%;border-radius: 50%;height: 50px;width: 50px;}
+    50%{top:180px;left: 50%;border-radius: 50%;height: 50px;width: 50px;}
+    60%{top:250px;left: 40%;border-radius: 50%;height: 50px;width: 50px;}
+    70%{top:220px;left: 30%;border-radius: 50%;height: 50px;width: 50px;}
+    80%{top:250px;left: 20%;border-radius: 50%;height: 50px;width: 50px;}
+    90%{left: 10%;border-radius: 25%;height: 100px;width: 50%;}*/
+    100%{left: 0%;}
 }
 
 
