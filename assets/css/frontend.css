@@ -76,7 +76,7 @@ img{
     background-color: #06094d4d;
     animation-name: welcomeHeadingDiv;
     animation-fill-mode: forwards;
-    animation-duration: 3s;
+    animation-duration: 1s;
 
 }
 
@@ -109,8 +109,8 @@ img{
     -webkit-background-clip: text;
     animation-name: welcomeHeadingLeft;
     animation-fill-mode: forwards;
-    animation-delay: 3s;
-    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-duration: 2s;
     animation-timing-function: ease-in-out;
 
 }
@@ -154,8 +154,8 @@ img{
     -webkit-background-clip: text;
     animation-name: welcomeHeadingRight;
     animation-fill-mode: forwards;
-    animation-delay: 8s;
-    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-duration: 3s;
     animation-timing-function: ease-in-out;
     font-size: 24px !important;
 
@@ -182,43 +182,26 @@ img{
     padding: 20px 10px;
     font-size: 3vw !important;
     background: linear-gradient(to right bottom,#e14c7f 39%,#f2e314 43%,#6df244 59%);
-        background-clip: text;
+    background-clip: border-box;
+    background-clip: text;
     -webkit-background: -webkit-linear-gradient(to right bottom,#e14c7f 39%,#f2e314 43%,#6df244 59%);
     position: absolute;
     display: block;
-    top: 490px !important;
-    left: 100%;
-    min-height: 100px;
-    /*width: 100%;*/
+    top: 505px !important;
+    right: 12.5%;
+    min-height: 70px;
     word-wrap: break-word;
-    /*height: 50px;*/
     background-clip: text;
     -webkit-background-clip: text;
-    animation-name: welcomeHeadingBottom;
-    animation-fill-mode: forwards;
-    animation-delay: 13s;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
     font-size: 24px !important;
-    border-bottom:1px solid red;
+    border-bottom: 1px solid red;
     border-radius: 100%;
-
+    box-shadow: -10px 11px 15px black;
+    padding: 5px;
+    transform: rotate(-5deg);
+    width: 40%;
+    text-align: center;
 }
-
-@keyframes welcomeHeadingBottom{
-    0%{left: 100%;/*border-radius: 50%;height: 50px;width: 50px;*/}
-    /*10%{top:130px;left: 90%;border-radius: 50%;height: 50px;width: 50px;}
-    20%{top:250px;left: 80%;border-radius: 50%;height: 50px;width: 50px;}
-    30%{top:150px;left: 70%;border-radius: 50%;height: 50px;width: 50px;}
-    40%{top:250px;left: 60%;border-radius: 50%;height: 50px;width: 50px;}
-    50%{top:180px;left: 50%;border-radius: 50%;height: 50px;width: 50px;}
-    60%{top:250px;left: 40%;border-radius: 50%;height: 50px;width: 50px;}
-    70%{top:220px;left: 30%;border-radius: 50%;height: 50px;width: 50px;}
-    80%{top:250px;left: 20%;border-radius: 50%;height: 50px;width: 50px;}
-    90%{left: 10%;border-radius: 25%;height: 100px;width: 50%;}*/
-    100%{left: 0%;}
-}
-
 
 #welcomePageButtons,#pageLinks{
     position: relative;
