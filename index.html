@@ -5,7 +5,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="assets/css/frontend.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/front_responsive.css">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Akronim" rel="stylesheet">
 	<style type="text/css">
 		       
 	</style>
@@ -19,6 +21,7 @@
 		<!-- Optional: some overlay text to describe the video -->
 		<!-- 	<div id="welcomePageMainHeadingDiv">
 			</div> -->
+			<h2 id="hih2">Hi</h2>
 		  	<h1 class="welcomePageMainHeadingleft">I AM</h1>
 		  	<h3 class="welcomePageMainHeadingRight">CHAITANYA</h3>
             <span class='welcomePageMainHeadingBottom fonteo'></span>
@@ -48,7 +51,7 @@
 			</div>
 			<div id="pageLinks">
 				<div id="welcomePortfolio">
-					<a href="#">My Profile</a>
+					<a href="portfolio.html">My Profile</a>
 				</div>
 			</div>
 			
@@ -89,14 +92,77 @@
 	  	}
 		$('.fonteo').fonteo( opts );
 	  }
-
+	  
 
 	</script>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			
-		
+			if($(window).width() <= 420){
+				$("#hih2").css("display","block");
+				  setTimeout(letterAnim,2000); 		
+				  function letterAnim(){
+				  	  	var opts = {
+				  	    text: 'Welcome, to my World ',
+				  	    direction: 'right',
+				  	    infinite: false,
+				  	    moving: true,
+				  	    pauseOnHover: false,
+				  	    speed: 10,
+				  	    letterIn: function(lr){
+				  	      lr.animate({'font-size':'30px', 'margin-left':'5px'  })
+				  	      lr.css('color','green')
 
+				  	      setTimeout( function(){
+				  	      lr.css('color','blue')
+				  	      lr.animate({'font-size':'20px', 'margin-left':'22px'  })
+				  	      }, 150 )
+
+				  	      setTimeout( function(){
+				  	      lr.animate({'font-size':'40px', 'margin-left':'0px'  })
+				  	      lr.css('color','black')
+				  	      }, 250 )
+				  	    },
+				  	    letterOut: function(lr){
+				  	      lr.animate({'font-size':'10px'},500,function(){
+				  	        $(this).fadeOut(300, function(){ $(this).remove() })
+				  	      })
+				  	    }
+				  	}
+					$('.fonteo').fonteo( opts );
+				  }
+			}else{
+				  setTimeout(letterAnim,5500); 		
+				  function letterAnim(){
+				  	  	var opts = {
+				  	    text: 'Welcome, to my World ',
+				  	    direction: 'right',
+				  	    infinite: false,
+				  	    moving: true,
+				  	    pauseOnHover: false,
+				  	    speed: 10,
+				  	    letterIn: function(lr){
+				  	      lr.animate({'font-size':'30px', 'margin-left':'5px'  })
+				  	      lr.css('color','green')
+
+				  	      setTimeout( function(){
+				  	      lr.css('color','blue')
+				  	      lr.animate({'font-size':'20px', 'margin-left':'22px'  })
+				  	      }, 150 )
+
+				  	      setTimeout( function(){
+				  	      lr.animate({'font-size':'40px', 'margin-left':'0px'  })
+				  	      lr.css('color','black')
+				  	      }, 250 )
+				  	    },
+				  	    letterOut: function(lr){
+				  	      lr.animate({'font-size':'10px'},500,function(){
+				  	        $(this).fadeOut(300, function(){ $(this).remove() })
+				  	      })
+				  	    }
+				  	}
+					$('.fonteo').fonteo( opts );
+				  }
+			}
 		});
 	</script>
 </body>
