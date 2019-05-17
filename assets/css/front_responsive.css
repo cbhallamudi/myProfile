@@ -18,6 +18,7 @@
 	    padding: 8.4px 8px;
 	    border-radius: 0px 20px 0px 0px;
 	    width: 100%;
+	    text-align: center;
 	}
 
 	#welcomeLoginForm {
@@ -178,4 +179,155 @@
 	    font-size: 32px !important;
 
 	}
+}
+
+@media only screen and (min-width: 601px) and (max-width: 752px){
+	#myVideo {
+	  position: fixed;
+	  width: 50%; 
+	  /*height: 100%;*/
+	}
+	#hih2{
+		display: none;
+	}
+
+	#existingUser {
+	    position: absolute;
+	    top: 0px;
+	    left: -75%;
+	    transition: left 3s ease;
+	    width: 100%;
+	    z-index: 1;
+	}
+
+	#welcomePortfolio {
+	    position: absolute;
+	    top: 0px;
+	    right: 0px;
+	    transition: left 3s ease;
+	    width: 30%;
+	}
+
+	#existingUser span {
+	    font-size: 3vw;
+	    color: #f4a950;
+	    background-color: #161b21;
+	    display: inline-block;
+	    padding: 10px;
+	    border-radius: 0px 20px 0px 0px;
+	    width: 100%;
+	    text-align: center;
+	}
+
+	#welcomePortfolio a {
+	    font-size: 3vw;
+	    background-color: #f4a950;
+	    color: #161b21;
+	    display: inline-block;
+	    padding: 10px;
+	    border-radius: 20px 0px 0px 0px;
+	    width: 100%;
+	    text-decoration: none;
+	    text-align: center;
+	}
+	.welcomePageMainHeadingleft {
+	    font-family: 'Run Wild - Demo';
+	    color: transparent;
+	    font-weight: 900;
+	    text-align: center;
+	    padding: 20px 2px;
+	    font-size: 3.7vw !important;
+	    background: linear-gradient(to right bottom,#e14c7f 39%,#f2e314 43%,#6df244 59%);
+	        background-clip: border-box;
+	    -webkit-background: -webkit-linear-gradient(to right bottom,#e14c7f 39%,#f2e314 43%,#6df244 59%);
+	    position: absolute;
+	    display: inline-block;
+	    top: 295px !important;
+	    left: 100%;
+	    height: 100px;
+	    background-clip: text;
+	    -webkit-background-clip: text;
+	    animation-name: welcomeHeadingLeft;
+	    animation-fill-mode: forwards;
+	    animation-delay: 1s;
+	    animation-duration: 2s;
+	    animation-timing-function: ease-in-out;
+	}
+
+	.welcomePageMainHeadingRight {
+	    font-family: 'Merriweather', serif;
+	    color: transparent;
+	    font-weight: 900;
+	    text-align: center;
+	    padding: 20px 10px;
+	    font-size: 3vw !important;
+	    background: linear-gradient(to right bottom,#e14c7f 39%,#f2e314 43%,#6df244 59%);
+	        background-clip: border-box;
+	    background-clip: border-box;
+	    -webkit-background: -webkit-linear-gradient(to right bottom,#e14c7f 39%,#f2e314 43%,#6df244 59%);
+	    position: absolute;
+	    display: block;
+	    top: 215px !important;
+	    left: 100%;
+	    min-height: 100px;
+	    width: 30px;
+	    word-wrap: break-word;
+	    background-clip: text;
+	    -webkit-background-clip: text;
+	    animation-name: welcomeHeadingRight;
+	    animation-fill-mode: forwards;
+	    animation-delay: 3s;
+	    animation-duration: 3s;
+	    animation-timing-function: ease-in-out;
+	    font-size: 2.5vw !important;
+	}
+
+	@keyframes welcomeHeadingRight{
+		0% {
+	    	left: 100%;
+		}
+		100% {
+		    left: 50%;
+		}	
+	}
+
+	.fonteo-letter {
+	    font-size: 4vw !important;
+	}
 }	
+
+@media only screen and (min-width: 753px) and (max-width: 800px){
+	#myVideo {
+	  position: fixed;
+	  width: 50%; 
+	  /*height: 100%;*/
+	}	
+	#hih2{
+		display: none;
+	}
+	#existingUser {
+	    position: absolute;
+	    top: 0px;
+	    left: -75%;
+	    transition: left 3s ease;
+	    width: 100%;
+	}
+	#existingUser span {
+	    font-size: 2.5vw;
+	    color: #f4a950;
+	    background-color: #161b21;
+	    display: inline-block;
+	    padding: 10px;
+	    border-radius: 0px 20px 0px 0px;
+	    width: 100%;
+	    text-align: center;
+	}
+
+	#welcomePortfolio {
+	    position: absolute;
+	    top: 0px;
+	    right: 0px;
+	    transition: left 3s ease;
+	    width: 10%;
+	}
+}
