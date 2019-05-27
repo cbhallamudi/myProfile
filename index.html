@@ -31,11 +31,11 @@
 						<form action="" method="POST">
 							<div>
 								<label>User Id</label>
-								<input type="text" name="username">
+								<input type="text" name="username" id="username">
 							</div>
 							<div>
 								<label>User Password</label>
-								<input type="password" name="userpassword">
+								<input type="password" name="userpassword" id="userpassword">
 							</div>
 							<div>
 								<input type="submit" value="Login" onclick="alert('done')">
@@ -165,6 +165,31 @@
 			}
 			//alert(window.innerHeight); 654
 			//alert(window.innerWidth); 1366
+
+			$("#username").focus(function(){
+				$("#username").animate({
+			      backgroundPositionX: "100%"
+			    },2000,'swing');
+			});
+			$("#userpassword").focus(function(){
+				$("#userpassword").animate({
+			      backgroundPositionX: "100%"
+			    },2000,'swing');
+			});
+			$("#username").blur(function(){
+				if($("#username").val()==""){
+					$("#username").animate({
+				      backgroundPositionX: "1%"
+				    },2000,'swing');	
+				}
+			});
+			$("#userpassword").blur(function(){
+				if($("#userpassword").val()==""){
+					$("#userpassword").animate({
+				      backgroundPositionX: "1%"
+				    },2000,'swing');	
+				}
+			});
 		});
 	</script>
 </body>

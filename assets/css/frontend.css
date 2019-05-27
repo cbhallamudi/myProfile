@@ -39,6 +39,32 @@ span{
 img{
 	max-width: 100%;
 }
+
+#username{
+    background-image: url("../images/emailIcon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 5% 0px;
+}
+#userpassword{
+    background-image: url("../images/passwordIcon.ico");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 5% 0px;
+}
+/*#username:focus,#userpassword:focus{
+    animation-name: userdetailsbg;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes userdetailsbg{
+    from{background-position: left;}
+    to{background-position: right;}
+}*/
+
+
 @font-face {
     font-family: 'Run Wild - Demo';
     src: url('../fonts/RunWild.eot');
