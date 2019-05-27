@@ -174,8 +174,8 @@ img{
     height: 80px;
     text-align: center;
     animation-name: welcomePageMainHeadingBottom;
-    animation-delay: 4s;
-    animation-duration: 7s;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
     animation-fill-mode: forwards;
 }
 
