@@ -8,40 +8,155 @@
 	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Akronim" rel="stylesheet">
 	<style type="text/css">
+		html {
+		  scroll-behavior: smooth;
+		}
 		#portfolioMainDiv{
 			min-height: 100vh;
-			background-image: url('assets/images/bg_image5.jpg');
+			background-image: url('assets/images/bg_image18.jpg');
 			background-repeat: no-repeat;
 			background-size: 100% 100%;
 			background-attachment: fixed;
 		}
+		
 		#portfolioHeader{
+			position: absolute;
 			height: 10vh;
-			background: #000;
-
-		}
-		#portfolioHeader h1{
-			height: 10vh;
-			width: 50%;
+			width: 100%;
 			margin: auto;
 			text-align: center;
-			color: white;
-			background-image: url('assets/images/bg_image16.jpg');
+			color: transparent;
+			background-image: url('assets/images/bg_image13.jpg');
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 			font-family: 'Akronim', cursive;
-			font-size: xx-large;
+			font-size: 25px;
 			letter-spacing: 3px;
 			text-transform: uppercase;
 			padding: 2vh 0px 0px 0px;
+			top: -60px;
+			left: 50px;
+		}
+		#sideMenu {
+		    position: relative;
+		    top: 130px;
+		    left: 5%;
+		    /*background: aquamarine;*/
+		    width: 45%;
+		    min-height: 200px;
+		    border-top: 5px solid #0f08;
+		}
+		#myProfileImg {
+		    width: 100px;
+		    height: 100px;
+		    border: 5px groove red;
+		    border-radius: 50%;
+		    position: absolute;
+		    top: -63px;
+		    left: 10px;
+		}
+
+		#sidemenuul{
+			background-color: #f002;
+			list-style-type: none;
+			padding: 5px;
+		}
+
+		.sidemenuli{
+			width: 50%;
+			background-color: #1bfbfb;
+			border-radius: 10px 20px 40px 40px;
+			margin: 10px 0px;
+			margin-left:-63%; 
+		}
+
+		.sidemenuli a {
+		    text-decoration: none;
+		    display: inline-block;
+		    width: 100%;
+		    /*height: 35px;*/
+		    font-size: 1.3vw;
+		    background-color: linear-gradient(to right bottom,red,blue,green);
+		    padding: 10px;
+		    text-align: center;
+		    text-transform:uppercase;
+		    color: #885335;
+		}
+
+		.changeLiBg{
+			animation-name: changeLiBg;
+			/*animation-iteration-count: infinite;*/
+			animation-duration: 3s;
+			animation-fill-mode: forwards;
+			/*animation-delay: 1s;*/
+		}
+
+		@keyframes changeLiBg{
+			0%{background:rgba(27, 251, 251,0.1);}
+			100%{background:rgba(27, 251, 251,1);}
 		}
 	</style>
 </head>
 <body>
 	<div id="portfolioMainDiv">
-		<header id="portfolioHeader">
-			<h1>Bhallamudi Chaitanya Viswanath</h1>
+		<header id="sideMenu">
+			<h1 id="portfolioHeader">Bhallamudi Chaitanya Viswanath</h1>
+			<img src="assets/images/user_image.png" alt="" id="myProfileImg">
+			<ul id="sidemenuul">
+				<li class="sidemenuli"><a href="#personal" class="sidemenua">Personal Info</a></li>
+				<li class="sidemenuli"><a href="#about" class="sidemenua">About Myself</a></li>
+				<li class="sidemenuli"><a href="#technical" class="sidemenua">Technical Skills</a></li>
+				<li class="sidemenuli"><a href="#employement" class="sidemenua">Professional Career</a></li>
+				<li class="sidemenuli"><a href="#interests" class="sidemenua">Personal Interests</a></li>
+			</ul>
+			<section class="subSections">
+				
+			</section>
+			<section class="subSections">
+				
+			</section>
+			<section class="subSections">
+				
+			</section>
+			<section class="subSections">
+				
+			</section>
+			<section class="subSections">
+				
+			</section>
 		</header>
 	</div>
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script src="assets/js/fonteo.js?1"></script>
+	<script type="text/javascript">
+		var margin_left = 20;
+		var anim_delay = 1000;
+		var elementNum = 1;
+		var elementLength = document.getElementsByClassName('sidemenuli').length;
+		if(elementNum<=elementLength){
+			setInterval(animate_lis,anim_delay)
+			function animate_lis() {
+				$(".sidemenuli:nth-child("+elementNum+")").animate({"marginLeft":margin_left+"%"},500,'swing').addClass("changeLiBg");
+				elementNum++;
+				margin_left+=7;
+				anim_delay+=10;
+			}	
+		}
+	</script>
+	<script>
+	$(document).ready(function(){
+	  $(".sidemenua").on('click', function(event) {
+	    if (this.hash !== "") {
+	      event.preventDefault();
+	      var hash = this.hash;
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 800, function(){
+	        window.location.hash = hash;
+	      });
+	    }
+	  });
+	});
+	</script>
 </body>
 </html>
