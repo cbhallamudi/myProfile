@@ -142,6 +142,12 @@
 		.piulli:nth-child(5) {
 		  animation-delay: 2.25s;
 		}
+		.piulli:nth-child(6) {
+		  animation-delay: 2.5s;
+		}
+		.piulli:nth-child(7) {
+		  animation-delay: 2.75s;
+		}
 		@-webkit-keyframes fadeIn {
 		  0% {
 		    opacity: 0;
@@ -177,6 +183,8 @@
 		    /*height: 100px !important;*/
 		    /*padding: 5px !important;*/
 		    margin: 0px !important;
+		    background: rgba(27, 251, 251,0.5) !important;
+		    /*color: #fff !important;*/
 		}
 
 		#portfolioHomeBtn{
@@ -249,11 +257,13 @@
 		<section class="subSections" id="personal">
 			<h2>Personal Information</h2>
 			<ul class="piul">
-			  <li>item 1</li>
-			  <li>item 2</li>
-			  <li>item 3</li>
-			  <li>item 4</li>
-			  <li>item 5</li>
+			  <li><label for="Name">First Name:</label><span>Chaitanya</span></li>
+			  <li><label for="Name">Middle Name:</label><span>Viswanath</span></li>
+			  <li><label for="Name">Last Name:</label><span>Bhallamudi</span></li>
+			  <li><label for="Name">Date of Birth:</label><span>25th June, 1988</span></li>
+			  <li><label for="Name">Place of Birth:</label><span>Bobbili</span></li>
+			  <li><label for="Name">Marital Status:</label><span>Married</span></li>
+			  <li><label for="Name">Children:</label><span>One Son</span></li>
 			</ul>
 		</section>
 		<section class="subSections" id="about">
@@ -493,7 +503,7 @@
 				7093059081
 			</phone>
 			<!-- <iframe src="#" frameborder="0" width="100%" height=""></iframe> -->
-			<!-- <iframe style="width:100%; min-height:10px;" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=17.8745742,83.3657384&amp;q= <?php echo $site->coordinates; ?> &amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/">Create Google Map</a></iframe> -->
+			<iframe style="width:100%; min-height:540px;" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=17.805549,83.2022093&amp;q= Lakshmi+Kamala+Sree+Paradise &amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 			
 		</section>
 	</div>
@@ -547,6 +557,7 @@
 			if($(window).scrollTop()>=200){
 				$("#personal li").attr("class","piulli");
 	      		$("#sidemenuul").attr("class","horizontalLinks");
+	      		$("#sidemenuul li").removeClass("changeLiBg");
 			}else{
 	      		$("#sidemenuul").removeClass("horizontalLinks");
 			}
