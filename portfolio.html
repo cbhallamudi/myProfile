@@ -4,6 +4,7 @@
 	<title>Chaitanya--Web Developer</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/frontend.css">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Akronim" rel="stylesheet">
@@ -18,10 +19,13 @@
 			background-size: 100% 100%;
 			background-attachment: fixed;
 		}
+		#portfolioheadercontainer{
+			min-height: 100vh;
+		}
 		
 		#portfolioHeader{
 			position: absolute;
-			height: 10vh;
+			height: 100vh;
 			width: 100%;
 			margin: auto;
 			text-align: center;
@@ -44,7 +48,7 @@
 		    /*background: aquamarine;*/
 		    width: 45%;
 		    min-height: 200px;
-		    border-top: 5px solid #0f08;
+		    border-top: 5px solid #0f09;
 		}
 		#myProfileImg {
 		    width: 100px;
@@ -60,6 +64,8 @@
 			background-color: #f002;
 			list-style-type: none;
 			padding: 5px;
+			position: absolute;
+			width: 100%;
 		}
 
 		.sidemenuli{
@@ -95,42 +101,409 @@
 			0%{background:rgba(27, 251, 251,0.1);}
 			100%{background:rgba(27, 251, 251,1);}
 		}
+
+		.subSections{
+			min-height: 654px;
+		}
+
+		.piul {
+		  width: 300px;
+		  position: absolute;
+		  left: 50%;
+		  margin-top: 25px;
+		  margin-left: -150px;
+		}
+		.piul li{
+			opacity: 0;
+		}
+		.piulli {
+		  position: relative;
+		  display: block;
+		  border: 1px solid hotpink;
+		  margin-bottom: 5px;
+		  padding: 10px;
+		  text-align: center;
+		  text-transform: uppercase;
+		  animation: fadeIn 1s linear;
+		  animation-fill-mode: both;
+		}
+		.piulli:nth-child(1) {
+		  animation-delay: 1.25s;
+		}
+		.piulli:nth-child(2) {
+		  animation-delay: 1.5s;
+		}
+		.piulli:nth-child(3) {
+		  animation-delay: 1.75s;
+		}
+		.piulli:nth-child(4) {
+		  animation-delay: 2s;
+		}
+		.piulli:nth-child(5) {
+		  animation-delay: 2.25s;
+		}
+		@-webkit-keyframes fadeIn {
+		  0% {
+		    opacity: 0;
+		    top: 100px;
+		  }
+		  50% {
+		    opacity: 0.4;
+		    top: -50px;
+		  }
+		  75% {
+		    opacity: 0.8;
+		    top: 0px;
+		  }
+		  100% {
+		    opacity: 1;
+		  }
+		}
+		#personal {
+		    background-image: url("assets/images/bg_image2.jpg");
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		}
+		.horizontalLinks{
+			position:fixed !important;
+			top: 0px !important;
+			left: 0px !important;
+			padding: 0px !important;
+			background-color: transparent !important;
+		}
+		.horizontalLinks li {
+		    display: inline-block !important;
+		    width: 13.98% !important;
+		    /*height: 100px !important;*/
+		    /*padding: 5px !important;*/
+		    margin: 0px !important;
+		}
+
+		#portfolioHomeBtn{
+			position: absolute;
+			top: 10px;
+			left: 5%;
+			width: 100px;
+			height: 100px;
+		}
+/*
+		#portfolioHomeBtn span:first-child{
+			margin-right: 2.5%;
+			display: inline-block;
+			width: 45%;
+			background-color: red;
+			color: white;
+			padding: 10px 0px;
+			text-align: center;
+			border-radius: 50%;
+		}*/
+		#portfolioHomeBtn .fa-home{
+			display: inline-block;
+			width: 60%;
+			background-color: #fff3;
+			color: red;
+			padding: 12px 0px;
+			text-align: center;
+			border-radius: 50%;
+		}
+		#technical{
+			background-image: url("assets/images/bg_image2.jpg");
+			background-repeat: no-repeat;
+		    background-size: cover;
+		}
+		#projects{
+			background-image: url("assets/images/bg_image2.jpg");
+			background-repeat: no-repeat;
+		    background-size: cover;
+		}
+		#contact{
+			background-image: url("assets/images/bg_image2.jpg");
+			background-repeat: no-repeat;
+		    background-size: cover;
+		}
+		#about,#employement,#interests{
+			background-color: #fff7;
+		}
+
 	</style>
 </head>
 <body>
 	<div id="portfolioMainDiv">
-		<header id="sideMenu">
-			<h1 id="portfolioHeader">Bhallamudi Chaitanya Viswanath</h1>
-			<img src="assets/images/user_image.png" alt="" id="myProfileImg">
-			<ul id="sidemenuul">
-				<li class="sidemenuli"><a href="#personal" class="sidemenua">Personal Info</a></li>
-				<li class="sidemenuli"><a href="#about" class="sidemenua">About Myself</a></li>
-				<li class="sidemenuli"><a href="#technical" class="sidemenua">Technical Skills</a></li>
-				<li class="sidemenuli"><a href="#employement" class="sidemenua">Professional Career</a></li>
-				<li class="sidemenuli"><a href="#interests" class="sidemenua">Personal Interests</a></li>
-			</ul>
-			<section class="subSections">
-				
-			</section>
-			<section class="subSections">
-				
-			</section>
-			<section class="subSections">
-				
-			</section>
-			<section class="subSections">
-				
-			</section>
-			<section class="subSections">
-				
-			</section>
+		<a id="portfolioHomeBtn" href="index.html"><span class="fas fa-home fa-2x"></span></a>
+		<!-- <span class="fas fa-caret-square-left"></span> -->
+		<header id="portfolioheadercontainer">
+			<header id="sideMenu">
+				<h1 id="portfolioHeader">Bhallamudi Chaitanya Viswanath</h1>
+				<img src="assets/images/user_image.png" alt="" id="myProfileImg">
+				<ul id="sidemenuul">
+					<li class="sidemenuli"><a href="#personal" class="sidemenua">Personal Info</a></li>
+					<li class="sidemenuli"><a href="#about" class="sidemenua">About Myself</a></li>
+					<li class="sidemenuli"><a href="#technical" class="sidemenua">Technical Skills</a></li>
+					<li class="sidemenuli"><a href="#employement" class="sidemenua">Career</a></li>
+					<li class="sidemenuli"><a href="#projects" class="sidemenua">Projects</a></li>
+					<li class="sidemenuli"><a href="#interests" class="sidemenua">Interests</a></li>
+					<li class="sidemenuli"><a href="#contact" class="sidemenua">Contact</a></li>
+				</ul>
+			</header>
 		</header>
+		<section class="subSections" id="personal">
+			<h2>Personal Information</h2>
+			<ul class="piul">
+			  <li>item 1</li>
+			  <li>item 2</li>
+			  <li>item 3</li>
+			  <li>item 4</li>
+			  <li>item 5</li>
+			</ul>
+		</section>
+		<section class="subSections" id="about">
+			<h2>About Myself</h2>
+			<p>
+				Positive words to describe yourself:
+				1. Able
+
+				I am able to handle multiple tasks on a daily basis.
+				2. Creative
+
+				I use a creative approach to problem solve.
+				3. Dependable
+
+				I am a dependable person who is great at time management.
+				4. Energetic
+
+				I am always energetic and eager to learn new skills.
+				5. Experience
+
+				I have experience working as part of a team and individually.
+				6. Flexible
+
+				I am flexible in my working hours, being able to work evenings and weekends.
+				7. Hardworking
+
+				I am hardworking and always the last to leave the office in the evening.
+
+				    I have organised the staff functions for the last four years with great success.
+
+				8. Honest
+
+				I am honest and trustworthy when I am counting money after our church bake-sales.
+				9. Imaginative
+
+				I work with the team to provide imaginative solutions for our customers.
+				10. Innovative
+
+				I am always coming up with innovative ideas.
+				11. Motivated
+
+				I am motivated to go to the gym before work to get fit and healthy.
+				12. Organised
+
+				I have organised the staff functions for the last four years with great success.
+				13. Reliable
+
+				Co-workers rely on me to be on time.
+				14. Sense of humour
+
+				Even though I take my work seriously, I do have a good sense of humour.
+
+				Follow the link for: How do I Make My CV Really Special?
+				Positive words to describe your achievements:
+				15. Achieved
+
+				I achieved a pass grade for my Level 2 Exercise to Music Instructor course.
+				16. Competed
+
+				I competed at national competitions in cheerleading.
+				17. Delivered
+
+				I delivered all projects in a timely fashion.
+				18. Helped
+
+				I helped out at the local care home during my spare time.
+
+				    I made cost savings on projects by using local manufacturers.
+
+				19. Identified
+
+				In the role, I identified a need for a new system  and, with management backing, it has since been implemented.
+				20. Managed
+
+				Lucy has managed the team through several large projects.
+				21. On time
+
+				I am always on time for organised events, work-related or otherwise.
+				22. Participated
+
+				Alice participated in her local Race for Life 10k charity run.
+				23. Savings
+
+				I made cost savings on projects by using local manufacturers.
+				24. Supervised
+
+				During this time, I supervised swimming galas at her local pool.
+				25. Won
+
+				I won gold in my very first cross-fit competition.
+			</p>
+			
+		</section>
+		<section class="subSections" id="technical">
+			<h2>Technical Skills</h2>
+			<ul id="techSkills">
+				<li class="techSkill">
+					HTML and HTML5
+				</li>
+				<li class="techSkill">
+					CSS and CSS3
+				</li>
+				<li class="techSkill">
+					Javascript
+				</li>
+				<li class="techSkill">
+					JQuery
+				</li>
+				<li class="techSkill">
+					Bootstrap
+				</li>
+				<li class="techSkill">
+					PHP
+				</li>
+				<li class="techSkill">
+					Codeigniter
+				</li>
+				<li class="techSkill">
+					Python
+				</li>
+				<li class="techSkill">
+					MS Office
+				</li>
+			</ul>
+			
+		</section>
+		<section class="subSections" id="employement">
+			<h2>Professional Career</h2>
+			<div class="employer">
+				<h3>Coromandel International Pvt. Ltd.</h3>
+				<p>Technical and Total Quality Management Assistant</p>
+				<p>Description:Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolorum eveniet hic aspernatur iusto accusantium sint explicabo, alias assumenda earum corporis expedita, vitae fugiat dicta qui voluptas! Hic, unde non!</p>
+				<ul>
+					<li>Role</li>
+					<li>Role</li>
+					<li>Role</li>
+					<li>Role</li>
+					<li>Role</li>
+				</ul>
+				<p>Platform</p>
+			</div>
+			<div class="employer">
+				<h3>Miracle Software Systems</h3>
+				<p>HCM Executive</p>
+				<p>Description:Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolorum eveniet hic aspernatur iusto accusantium sint explicabo, alias assumenda earum corporis expedita, vitae fugiat dicta qui voluptas! Hic, unde non!</p>
+				<ul>
+					<li>Role</li>
+					<li>Role</li>
+					<li>Role</li>
+					<li>Role</li>
+					<li>Role</li>
+				</ul>
+				<p>Platform</p>
+			</div>
+			<div class="employer">
+				<h3>Media3 International Pvt. Ltd.</h3>
+				<p>Junior Software Engineer</p>
+				<p>Description:Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolorum eveniet hic aspernatur iusto accusantium sint explicabo, alias assumenda earum corporis expedita, vitae fugiat dicta qui voluptas! Hic, unde non!</p>
+				<ul>
+					<li>Role</li>
+					<li>Role</li>
+					<li>Role</li>
+					<li>Role</li>
+					<li>Role</li>
+				</ul>
+				<p>Platform</p>
+			</div>
+			
+		</section>
+		<section class="subSections" id="projects">
+			<h2>Projects</h2>
+			<div class="project">
+				<h3><a href="https://www.chairecords.com/">CHAIRECORDS</a></h3>
+				<p>Backend Developer</p>
+				<p>Description:Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolorum eveniet hic aspernatur iusto accusantium sint explicabo, alias assumenda earum corporis expedita, vitae fugiat dicta qui voluptas! Hic, unde non!</p>
+				<ul>
+					<li>Role</li>
+					<li>Role</li>
+					<li>Role</li>
+					<li>Role</li>
+					<li>Role</li>
+				</ul>
+				<p>Platform</p>
+				<a href="https://www.chairecords.com/">CHAIRECORDS</a>
+			</div>
+			<div class="project">
+				<h3><a href="http://pydah.in/">PYDAH EDUCATIONAL ACADEMY</a></h3>
+				<p>Backend Developer</p>
+				<p>Description:Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolorum eveniet hic aspernatur iusto accusantium sint explicabo, alias assumenda earum corporis expedita, vitae fugiat dicta qui voluptas! Hic, unde non!</p>
+				<ul>
+					<li>Role</li>
+					<li>Role</li>
+					<li>Role</li>
+					<li>Role</li>
+					<li>Role</li>
+				</ul>
+				<p>Platform</p>
+				<a href="http://pydah.in/">PYDAH EDUCATIONAL ACADEMY</a>
+			</div>
+			<div class="project">
+				<h3><a href="http://casmark.org/beta/">SMARK & ASSOCIATES</a></h3>
+				<p>Backend Developer</p>
+				<p>Description:Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolorum eveniet hic aspernatur iusto accusantium sint explicabo, alias assumenda earum corporis expedita, vitae fugiat dicta qui voluptas! Hic, unde non!</p>
+				<ul>
+					<li>Role</li>
+					<li>Role</li>
+					<li>Role</li>
+					<li>Role</li>
+					<li>Role</li>
+				</ul>
+				<p>Platform</p>
+				<a href="http://casmark.org/beta/">SMARK & ASSOCIATES</a>
+			</div>
+			
+		</section>
+		<section class="subSections" id="interests">
+			<h2>Personal Interests</h2>
+			<div class="interest">
+				<h3><a href="https://www.chess.com/">CHESS</a></h3>
+				<p>Description:Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolorum eveniet hic aspernatur iusto accusantium sint explicabo, alias assumenda earum corporis expedita, vitae fugiat dicta qui voluptas! Hic, unde non!</p>
+			</div>
+			<div class="interest">
+				<h3><a href="#">SPORTS</a></h3>
+				<p>Description:Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolorum eveniet hic aspernatur iusto accusantium sint explicabo, alias assumenda earum corporis expedita, vitae fugiat dicta qui voluptas! Hic, unde non!</p>
+			</div>
+			<div class="interest">
+				<h3><a href="#">COOKING</a></h3>
+				<p>Description:Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolorum eveniet hic aspernatur iusto accusantium sint explicabo, alias assumenda earum corporis expedita, vitae fugiat dicta qui voluptas! Hic, unde non!</p>
+			</div>
+		</section>
+		<section class="subSections" id="contact">
+			<h2>Contact Information</h2>
+			<address>
+				Address:Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam eum expedita vitae, iure repellat nobis soluta exercitationem! Accusamus aliquam amet velit corporis illo nulla eius molestiae nostrum, quas! Iure, ex.
+			</address>
+			<phone>
+				7093059081
+			</phone>
+			<!-- <iframe src="#" frameborder="0" width="100%" height=""></iframe> -->
+			<!-- <iframe style="width:100%; min-height:10px;" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=17.8745742,83.3657384&amp;q= <?php echo $site->coordinates; ?> &amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/">Create Google Map</a></iframe> -->
+			
+		</section>
 	</div>
 	<script type="text/javascript" src="assets/js/jquery.js"></script>
 	<script src="assets/js/fonteo.js?1"></script>
 	<script type="text/javascript">
+
+		// alert(window.innerHeight);
 		var margin_left = 20;
-		var anim_delay = 1000;
+		var anim_delay = 50;
 		var elementNum = 1;
 		var elementLength = document.getElementsByClassName('sidemenuli').length;
 		if(elementNum<=elementLength){
@@ -138,7 +511,7 @@
 			function animate_lis() {
 				$(".sidemenuli:nth-child("+elementNum+")").animate({"marginLeft":margin_left+"%"},500,'swing').addClass("changeLiBg");
 				elementNum++;
-				margin_left+=7;
+				margin_left+=5;
 				anim_delay+=10;
 			}	
 		}
@@ -149,6 +522,16 @@
 	    if (this.hash !== "") {
 	      event.preventDefault();
 	      var hash = this.hash;
+	      if($(hash).offset().top>=654){
+	      	$("#sidemenuul").attr("class","horizontalLinks");
+	      }else{
+	      	$("#sidemenuul").removeClass("horizontalLinks");
+	      }
+	      // alert($(hash).offset().top);
+	      if($(hash).offset().top==654){
+	      	$(hash+" li").attr("class","piulli");
+	      }
+
 	      $('html, body').animate({
 	        scrollTop: $(hash).offset().top
 	      }, 800, function(){
@@ -157,6 +540,19 @@
 	    }
 	  });
 	});
+
+	$(document).ready(function(){
+		$(window).scroll(function(){
+			// alert($(window).scrollTop()); 
+			if($(window).scrollTop()>=200){
+				$("#personal li").attr("class","piulli");
+	      		$("#sidemenuul").attr("class","horizontalLinks");
+			}else{
+	      		$("#sidemenuul").removeClass("horizontalLinks");
+			}
+		});
+	});
 	</script>
+	
 </body>
 </html>

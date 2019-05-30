@@ -203,10 +203,10 @@ img{
     /*transition: left 3s ease;*/
     width: 10%;   
 }
-
+/*
 #existingUser:hover{
     left:0px;
-}
+}*/
 
 #existingUser span{
     font-size: 1.5vw;
@@ -214,8 +214,8 @@ img{
     background-color: #161b21;
     display: inline-block;
     padding: 10px;
-    border-radius: 0px 20px 0px 0px;
-    width: 100%;
+    /*border-radius: 0px 20px 0px 0px;*/
+    width: 77%;
 }
 
 #welcomePortfolio a {
@@ -269,4 +269,15 @@ img{
     margin: 5px;
     width: 90%;
     border: 1px solid #a6e3f8;
+}
+
+#adminUserArrowIcon {
+    font-size: 1.35vw;
+    color: #f4a950;
+    background-color: #161b21;
+    display: inline-block;
+    padding: 12px 8px;
+    border-radius: 0px 20px 0px 0px;
+    width: 20%;
+    margin-left: -3%;
 }

@@ -4,6 +4,7 @@
 	<title>Chaitanya--Web Developer</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/frontend.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/front_responsive.css">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
@@ -21,9 +22,9 @@
 		<!-- Optional: some overlay text to describe the video -->
 		<!-- 	<div id="welcomePageMainHeadingDiv">
 			</div> -->
-			<!-- <h2 id="hih2">Hi</h2>
+			<h2 id="hih2">Hi</h2>
 		  	<h1 class="welcomePageMainHeadingleft">I AM</h1>
-		  	<h3 class="welcomePageMainHeadingRight">CHAITANYA</h3> -->
+		  	<h3 class="welcomePageMainHeadingRight">CHAITANYA</h3>
             <span class='welcomePageMainHeadingBottom fonteo'></span>
 			<div id="welcomePageButtons">
 				<div id="existingUser">
@@ -44,6 +45,7 @@
 					</div>
 					<div id="welcomeLoginShow">
 						<span>Admin Login</span>
+						<i id="adminUserArrowIcon" class="fas fa-caret-square-right"></i>
 					</div>
 					<div class="clearing"></div>	
 
@@ -179,17 +181,28 @@
 			$("#username").blur(function(){
 				if($("#username").val()==""){
 					$("#username").animate({
-				      backgroundPositionX: "1%"
+				      backgroundPositionX: "5%"
 				    },2000,'swing');	
 				}
 			});
 			$("#userpassword").blur(function(){
 				if($("#userpassword").val()==""){
 					$("#userpassword").animate({
-				      backgroundPositionX: "1%"
+				      backgroundPositionX: "5%"
 				    },2000,'swing');	
 				}
 			});
+			$(".fa-caret-square-right").click(function(){
+				$("#existingUser").animate({"left":"0px"},500,'swing');
+				$("#adminUserArrowIcon").removeClass('fa-caret-square-right');
+				$("#adminUserArrowIcon").addClass('fa-caret-square-left');
+			});
+			$(".fa-caret-square-left").click(function(){
+				$("#existingUser").animate({"left":"-37.5%"},500,'swing');
+				$("#adminUserArrowIcon").removeClass('fa-caret-square-left');
+				$("#adminUserArrowIcon").addClass('fa-caret-square-right');
+			});
+
 		});
 	</script>
 </body>
