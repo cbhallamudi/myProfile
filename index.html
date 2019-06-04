@@ -39,7 +39,8 @@
 								<input type="password" name="userpassword" id="userpassword">
 							</div>
 							<div>
-								<input type="submit" value="Login" onclick="alert('done')">
+								<input type="submit" value="Login">
+								<input type="button" value="Cancel">
 							</div>
 						</form>
 					</div>
@@ -197,7 +198,13 @@
 				$("#adminUserArrowIcon").removeClass('fa-caret-square-right');
 				$("#adminUserArrowIcon").addClass('fa-caret-square-left');
 			});
-			$(".fa-caret-square-left").click(function(){
+			// $(".fa-caret-square-left").click(function(){
+			// 	$("#existingUser").animate({"left":"-37.5%"},500,'swing');
+			// 	$("#adminUserArrowIcon").removeClass('fa-caret-square-left');
+			// 	$("#adminUserArrowIcon").addClass('fa-caret-square-right');
+			// });
+
+			$("#welcomeLoginForm input[type='button']").click(function(){
 				$("#existingUser").animate({"left":"-37.5%"},500,'swing');
 				$("#adminUserArrowIcon").removeClass('fa-caret-square-left');
 				$("#adminUserArrowIcon").addClass('fa-caret-square-right');

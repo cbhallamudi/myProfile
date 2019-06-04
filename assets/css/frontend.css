@@ -85,9 +85,10 @@ img{
     background: linear-gradient(to right bottom,#e14c7f 39%,#f2e314 43%,#6df244 59%);
     -webkit-background: -webkit-linear-gradient(to right bottom,#e14c7f 39%,#f2e314 43%,#6df244 59%);
     position: absolute;
+    opacity: 0;
     display: inline-block;
     top: 218px !important;
-    left: 100%;
+    left: 39.5%;
     height: 100px;
     background-clip: text;
     -webkit-background-clip: text;
@@ -100,8 +101,8 @@ img{
 }
 
 @keyframes welcomeHeadingLeft{
-    0%{left: 100%;}
-    100%{left: 39.5%;}
+    0%{opacity:0;}
+    100%{opacity:1;}
 }
 .welcomePageMainHeadingRight{
     font-family: 'Merriweather', serif;
@@ -114,8 +115,9 @@ img{
     -webkit-background: -webkit-linear-gradient(to right bottom,#e14c7f 39%,#f2e314 43%,#6df244 59%);
     position: absolute;
     display: block;
+    opacity: 0;
     top: 190px !important;
-    left: 100%;
+    left: 65%;
     min-height: 100px;
     width: 35px;
     word-wrap: break-word;
@@ -123,16 +125,15 @@ img{
     -webkit-background-clip: text;
     animation-name: welcomeHeadingRight;
     animation-fill-mode: forwards;
-    animation-delay: 3s;
-    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-duration: 2s;
     animation-timing-function: ease-in-out;
     font-size: 24px !important;
-
 }
 
 @keyframes welcomeHeadingRight{
-    0%{left: 100%;}
-    100%{left: 65%;}
+    0%{opacity:0;}
+    100%{opacity:1;}
 }
 .welcomePageMainHeadingBottom{
     opacity: 0;
@@ -148,7 +149,7 @@ img{
     height: 80px;
     text-align: center;
     animation-name: welcomePageMainHeadingBottom;
-    animation-delay: 1.5s;
+    animation-delay: 2.5s;
     animation-duration: 10s;
     animation-fill-mode: forwards;
 }
@@ -230,7 +231,17 @@ img{
     display: inline-block;
     border-radius: 20px;
     width: 30%;
-    margin: 5px 0px 0px 30%;
+    margin: 5px 0px 0px 15%;
+    background-color: #161b21;
+    color: #f4a950;
+    font-size: 18px;
+}
+#welcomeLoginForm input[type="button"]{
+    padding: 5px;
+    display: inline-block;
+    border-radius: 20px;
+    width: 30%;
+    margin: 5px 0px 0px 5%;
     background-color: #161b21;
     color: #f4a950;
     font-size: 18px;
