@@ -9,33 +9,7 @@
 header,footer,section,article,figure,figcaption,aside,nav{
 	display: block;
 }
-/*a{
 
-}
-p{
-
-}
-h1{
-
-}
-h2{
-	
-}
-h3{
-	
-}
-h4{
-	
-}
-h5{
-	
-}
-h6{
-	
-}
-span{
-
-}*/
 img{
 	max-width: 100%;
 }
@@ -281,3 +255,244 @@ img{
     width: 20%;
     margin-left: -3%;
 }
+html {
+          scroll-behavior: smooth;
+        }
+        #portfolioMainDiv{
+            min-height: 100vh;
+            background-image: url('../images/bg_image18.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+        #portfolioheadercontainer{
+            min-height: 100vh;
+        }
+        
+        #portfolioHeader{
+            position: absolute;
+            height: 100vh;
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            color: transparent;
+            background-image: url('../images/bg_image13.jpg');
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: 'Akronim', cursive;
+            font-size: 25px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            padding: 2vh 0px 0px 0px;
+            top: -60px;
+            left: 50px;
+        }
+        #sideMenu {
+            position: relative;
+            top: 130px;
+            left: 5%;
+            /*background: aquamarine;*/
+            width: 45%;
+            min-height: 200px;
+            border-top: 5px solid #0f09;
+        }
+        #myProfileImg {
+            width: 100px;
+            height: 100px;
+            border: 5px groove red;
+            border-radius: 50%;
+            position: absolute;
+            top: -63px;
+            left: 10px;
+        }
+
+        #sidemenuul{
+            background-color: #f002;
+            list-style-type: none;
+            padding: 5px;
+            position: absolute;
+            width: 100%;
+        }
+
+        .sidemenuli{
+            width: 50%;
+            background-color: #1bfbfb;
+            border-radius: 10px 20px 40px 40px;
+            margin: 25px 0px;
+            margin-left:-63%; 
+        }
+
+        .sidemenuli a {
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            /*height: 35px;*/
+            font-size: 1.3vw;
+            background-color: linear-gradient(to right bottom,red,blue,green);
+            padding: 10px;
+            text-align: center;
+            text-transform:uppercase;
+            color: #885335;
+        }
+
+        .changeLiBg{
+            animation-name: changeLiBg;
+            /*animation-iteration-count: infinite;*/
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            /*animation-delay: 1s;*/
+        }
+
+        @keyframes changeLiBg{
+            0%{background:rgba(27, 251, 251,0.1);}
+            100%{background:rgba(27, 251, 251,1);}
+        }
+
+        .subSections{
+            min-height: 654px;
+            padding-top: 50px;
+        }
+
+        .piul {
+          width: 300px;
+          position: absolute;
+          left: 50%;
+          top: 10px;
+          margin-top: 25px;
+          margin-left: -150px;
+        }
+        .piul li{
+            opacity: 0;
+            background-color: #0000005a;
+            color: #fff;
+        }
+        .piulli {
+          position: relative;
+          display: block;
+          border: 1px solid hotpink;
+          margin-bottom: 5px;
+          padding: 10px;
+          text-align: center;
+          text-transform: uppercase;
+          animation: fadeIn 1s linear;
+          animation-fill-mode: both;
+        }
+        .piulli:nth-child(1) {
+          animation-delay: 1.25s;
+        }
+        .piulli:nth-child(2) {
+          animation-delay: 1.5s;
+        }
+        .piulli:nth-child(3) {
+          animation-delay: 1.75s;
+        }
+        .piulli:nth-child(4) {
+          animation-delay: 2s;
+        }
+        .piulli:nth-child(5) {
+          animation-delay: 2.25s;
+        }
+        .piulli:nth-child(6) {
+          animation-delay: 2.5s;
+        }
+        .piulli:nth-child(7) {
+          animation-delay: 2.75s;
+        }
+        @-webkit-keyframes fadeIn {
+          0% {
+            opacity: 0;
+            top: 100px;
+          }
+          50% {
+            opacity: 0.4;
+            top: -50px;
+          }
+          75% {
+            opacity: 0.8;
+            top: 0px;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+/*
+        .subSections h2{
+            margin-top: 100px !important;
+        }*/
+
+        #personal {
+            background-image: url("../images/bg_image2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 374px !important;
+            position: relative;
+        }
+        .horizontalLinks{
+            position:fixed !important;
+            top: 0px !important;
+            left: 0px !important;
+            padding: 0px !important;
+            background-color: transparent !important;
+            z-index: +9 !important;
+        }
+        .horizontalLinks li {
+            display: inline-block !important;
+            width: 13.98% !important;
+            /*height: 100px !important;*/
+            /*padding: 5px !important;*/
+            margin: 0px !important;
+            background: rgba(27, 251, 251) !important;
+            /*color: #fff !important;*/
+        }
+
+        #portfolioHomeBtn{
+            position: absolute;
+            top: 10px;
+            left: 5%;
+            width: 100px;
+            height: 100px;
+        }
+/*
+        #portfolioHomeBtn span:first-child{
+            margin-right: 2.5%;
+            display: inline-block;
+            width: 45%;
+            background-color: red;
+            color: white;
+            padding: 10px 0px;
+            text-align: center;
+            border-radius: 50%;
+        }*/
+        #portfolioHomeBtn .fa-home{
+            display: inline-block;
+            width: 60%;
+            background-color: #fff3;
+            color: red;
+            padding: 12px 0px;
+            text-align: center;
+            border-radius: 50%;
+        }
+        #technical{
+            background-image: url("../images/bg_image21.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 250px;
+        }
+        #projects{
+            background-image: url("../images/bg_image20.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #contact{
+            /*background-image: url("../images/bg_image3.jpg");*/
+            background: linear-gradient(to right bottom,#FAB1B1,#F57694,#D99AB0);
+            -webkit-background: -webkit-linear-gradient(to right bottom,#FAB1B1,#F57694,#D99AB0);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #about,#employement,#interests{
+            background-color: #fff7;
+        }
+        #interests{
+            min-height: 220px;
+        }
